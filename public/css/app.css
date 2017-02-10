@@ -1,0 +1,224 @@
+#wrapper {
+  width: 50%;
+  margin: 30px auto;
+}
+
+body {
+  font-family: Arial;
+  background: linear-gradient(89deg, #c91e20, #c91e82, #791ec9, #1e70c9, #1ec99d);
+  background-size: 1000% 1000%;
+  -webkit-animation: AnimationName 12s ease infinite;
+  -moz-animation: AnimationName 12s ease infinite;
+  -o-animation: AnimationName 12s ease infinite;
+  animation: AnimationName 12s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+#input-text{
+  height: 30px;
+  width: 50%;
+  color: #FFF;
+  padding: 0 20px;
+  font-size: 14px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  background-color: rgba(230,230,230, 0.5);
+  border-radius: 30px;
+  border: 0.5px solid rgba(230,230,230, 0.9);
+}
+
+@media (max-width: 768px) {
+  #wrapper {
+    width: 90%;
+    margin: 30px auto;
+  }
+  #input-text{
+    width: 90%;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+  }
+}
+
+.logo-container, .container{
+  text-align: center;
+  width: 100%;
+}
+
+.logo{
+  margin: 20px 0 0px 0;
+  height: 80px;
+}
+
+.chat ul {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+.message-left .message-time {
+  display: block;
+  font-size: 12px;
+  text-align: left;
+  padding-left: 30px;
+  padding-top: 4px;
+  color: #FFF;
+  font-family: Courier;
+}
+
+.message-right .message-time {
+  display: block;
+  font-size: 12px;
+  text-align: right;
+  padding-right: 20px;
+  padding-top: 4px;
+  color: #FFF;
+  font-family: Courier;
+}
+
+.message-left {
+  text-align: left;
+  margin-bottom: 16px;
+}
+
+.message-left .message-text {
+  max-width: 80%;
+  display: inline-block;
+  background: rgba(255,255,255,0.2);
+  padding: 15px;
+  font-size: 14px;
+  color: #FFF;
+  border-radius: 30px;
+  font-weight: 100;
+  line-height: 1.5em;
+}
+
+.message-right {
+  text-align: right;
+  margin-bottom: 16px;
+}
+
+.message-right .message-text {
+  line-height: 1.5em;
+  display: inline-block;
+  background: rgba(255,255,255,0.2);
+  padding: 15px;
+  font-size: 14px;
+  color: #fff;
+  border-radius: 30px;
+  line-height: 1.5em;
+  font-weight: 100;
+  text-align: left;
+}
+
+.chat {
+  border-radius: 30px;
+  padding: 20px;
+  background: rgba(230,230,230, 0.5);
+}
+
+.chat-container {
+  height: 400px;
+  overflow-y: scroll;
+  padding-right: 16px;
+}
+
+.spinme-right {
+  display: inline-block;
+  padding: 15px 20px;
+  font-size: 14px;
+  border-radius: 30px;
+  line-height: 1.25em;
+  font-weight: 100;
+  opacity: 0.2;
+}
+
+.spinme-left {
+  display: inline-block;
+  padding: 15px 20px;
+  font-size: 14px;
+  color: #ccc;
+  border-radius: 30px;
+  line-height: 1.25em;
+  font-weight: 100;
+  opacity: 0.2;
+}
+
+.spinner {
+  margin: 0;
+  width: 30px;
+  text-align: center;
+}
+
+.spinner > div {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  display: inline-block;
+  -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+  animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+  background: rgba(0,0,0,1);
+}
+
+.spinner .bounce1 {
+  -webkit-animation-delay: -0.32s;
+  animation-delay: -0.32s;
+}
+
+.spinner .bounce2 {
+  -webkit-animation-delay: -0.16s;
+  animation-delay: -0.16s;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-o-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+.footerWrap {
+    width:100%;
+    position:fixed;
+    bottom: 0px;
+}
+.footer {
+    width:400px;
+    margin:auto;
+}
+.footerContent {
+    float:left;
+    width:100%;
+    padding: 0px 0;
+}
+.footer p {float:left; width:100%; text-align:center; color: #FFF; font-size: 12px;}
+.footer p a { text-decoration:none; color: #FFF; font-size: 12px;}
