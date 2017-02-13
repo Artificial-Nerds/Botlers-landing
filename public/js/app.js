@@ -1,6 +1,8 @@
 
 var chatDelay = 0;
 var msg_number = 0;
+var request = require('request');
+var chatId="";
 
 function onRowAdded() {
   $('.chat-container').animate({
@@ -9,15 +11,22 @@ function onRowAdded() {
 };
 
 $(document).ready(function(){
-  $( "#input-text" ).focus();
-  botResponse("Hola, somos Botlers 🤖");
-    $(document).keypress(function(e) {
-      if(e.which == 13) {
-          var msg = $( "#input-text" ).val();
-          sendUserMessage(msg);
-          onRowAdded();
-          $( "#input-text" ).val("");
-      }
+  request.post({url:'http://35.163.243.122:3000/api/v1/getConversationId', form: {key:'value'}}, function(err,httpResponse,body){ /* ... */
+    var info = JSON.parse(body);
+    chatId=info.conversationId;
+    request.post({url:'http://35.163.243.122:3000/api/v1/sendMessage', form: {message:'hola',conversationId:chatId}}, function(err,httpResponse,body2){ /* ... */
+      var info2 = JSON.parse(body2);
+      botResponse(info2.message);
+      $( "#input-text" ).focus();
+        $(document).keypress(function(e) {
+          if(e.which == 13) {
+              var msg = $( "#input-text" ).val();
+              sendUserMessage(msg);
+              onRowAdded();
+              $( "#input-text" ).val("");
+          }
+      });
+    });
   });
 });
 
@@ -28,8 +37,12 @@ function sendUserMessage(msg){
   $(".chat-message-list").append("<li class='message-right " + msg_number + "'><div class='messageinner-" + msg_number + "' hidden><span class='message-text'>" + msg + "</span>" + chatTimeString + "</div></li>");
   $(msg_class).fadeIn();
   msg_number++;
-  
-  botResponse("la la la 👻");
+  request.post({url:'http://35.163.243.122:3000/api/v1/sendMessage', form: {message:msg,conversationId:chatId}}, function(err,httpResponse,body){ /* ... */
+    var info = JSON.parse(body);
+    if(info.message!=""){
+      botResponse(info.message);
+    }
+  });
 }
 
 function botResponse(msg){
