@@ -1,7 +1,6 @@
 
 var chatDelay = 0;
 var msg_number = 0;
-var request = require('request');
 var chatId="";
 
 function onRowAdded() {
@@ -11,23 +10,33 @@ function onRowAdded() {
 };
 
 $(document).ready(function(){
-  request.post({url:'http://35.163.243.122:3000/api/v1/getConversationId', form: {key:'value'}}, function(err,httpResponse,body){ /* ... */
-    var info = JSON.parse(body);
-    chatId=info.conversationId;
-    request.post({url:'http://35.163.243.122:3000/api/v1/sendMessage', form: {message:'hola',conversationId:chatId}}, function(err,httpResponse,body2){ /* ... */
-      var info2 = JSON.parse(body2);
-      botResponse(info2.message);
-      $( "#input-text" ).focus();
-        $(document).keypress(function(e) {
-          if(e.which == 13) {
-              var msg = $( "#input-text" ).val();
-              sendUserMessage(msg);
-              onRowAdded();
-              $( "#input-text" ).val("");
-          }
+  var data0 = {key: "value"};
+  var jsonVal=JSON.stringify(data0 );
+  $.ajax({
+    url: "chatId",
+    type: "GET",
+    success: function(data,textStatus,jqXHR ){
+      //console.log(data.conversationId);
+      chatId=data.conversationId;
+      $.ajax({
+        url: "botResponse/"+chatId+"/"+"hola",
+        type: "GET",
+        success: function(data,textStatus,jqXHR ){
+          $( "#input-text" ).focus();
+          botResponse(data.response);
+            $(document).keypress(function(e) {
+              if(e.which == 13) {
+                  var msg = $( "#input-text" ).val();
+                  sendUserMessage(msg);
+                  onRowAdded();
+                  $( "#input-text" ).val("");
+              }
+          });
+        }
       });
-    });
+    }
   });
+
 });
 
 
@@ -36,11 +45,13 @@ function sendUserMessage(msg){
   var msg_class = ".messageinner-" + msg_number;
   $(".chat-message-list").append("<li class='message-right " + msg_number + "'><div class='messageinner-" + msg_number + "' hidden><span class='message-text'>" + msg + "</span>" + chatTimeString + "</div></li>");
   $(msg_class).fadeIn();
+  onRowAdded();
   msg_number++;
-  request.post({url:'http://35.163.243.122:3000/api/v1/sendMessage', form: {message:msg,conversationId:chatId}}, function(err,httpResponse,body){ /* ... */
-    var info = JSON.parse(body);
-    if(info.message!=""){
-      botResponse(info.message);
+  $.ajax({
+    url: "botResponse/"+chatId+"/"+msg,
+    type: "GET",
+    success: function(data,textStatus,jqXHR ){
+      botResponse(data.response);
     }
   });
 }

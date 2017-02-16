@@ -4,13 +4,30 @@
  */
 var request = require('request');
 
-exports.bot = function (req, res) {
-  console.log(req.body);
-  res.send(JSON.stringify({ a: 1 }))
+exports.message = function (req, res) {
+  console.log(req.params);
+  //res.send(JSON.stringify({ a: 1 }))
+
   request.post({
-    url:'http://35.163.243.122:3000', form: {
-      conversationId: req.body.conversationId,
-      message: req.body.message
+    url:'http://35.163.243.122:3000/api/v1/sendMessage', json: {
+      conversationId: req.params.chatId,
+      message: req.params.message
     }
-  }, function(err,httpResponse,body){ res.send(JSON.stringify({ a: 1 })) });
+  }, function(err,httpResponse,body){
+    console.log(body);
+    res.send(body.value)
+  });
+};
+
+exports.chatId = function (req, res) {
+  //res.send(JSON.stringify({ a: 1 }))
+
+  request.post({
+    url:'http://35.163.243.122:3000/api/v1/getConversationId', json: {
+      key: "value"
+    }
+  }, function(err,httpResponse,body){
+    console.log(body);
+    res.send(body)
+  });
 };

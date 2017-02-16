@@ -13,8 +13,10 @@ const response = require('../app/controllers/response');
 
 module.exports = function (app, passport) {
 
+
   app.get('/', home.index);
-  app.get('/response', response.bot);
+  app.get('/chatId', response.chatId);
+  app.get('/botResponse/:chatId/:message', response.message);
 
   /**
    * Error handling
