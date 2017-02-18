@@ -22,7 +22,7 @@ $(document).ready(function(){
         url: "botResponse/"+chatId+"/"+"hola",
         type: "GET",
         success: function(data,textStatus,jqXHR ){
-          $( "#input-text" ).focus();
+          //$( "#input-text" ).focus();
           botResponse(data.response);
             $(document).keypress(function(e) {
               if(e.which == 13) {
