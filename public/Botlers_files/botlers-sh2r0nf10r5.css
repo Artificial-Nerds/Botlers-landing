@@ -1,0 +1,152 @@
+.devices-header .tablet .screen {
+    margin-left: 90px;
+    width: 420px;
+    height: 620px;
+    box-shadow: 2px 2px 8px rgba(107,124,147,.5);
+  }  
+
+      .devices-header .phone .screen {
+          margin-left: 40px;
+          box-shadow: 10px 10px 4px rgba(50,50,93,.25);
+}      
+      
+  .section-introduction {
+    margin: 20px 0 80px;
+  }
+    
+@media (min-width: 670px) {
+    .stripes-header {
+        bottom: -197px;
+        }
+}
+   
+.stripes-header .s1 {
+
+    bottom: -30px;
+
+}      
+   
+.globalNav .item-home h1 {
+    font-size: 30px;
+}
+    
+.stripes-developers {
+
+    background: #004295;
+    
+}      
+      
+      .StripeBackground {
+      
+          transform: skewY(0deg);
+      
+      }
+      
+      .section-checkout {
+        background: rgba(0,0,0,.1)
+      }
+      
+      @media (min-width: 670px) {
+.group-business {
+    background: aliceblue;
+}  
+      }
+      
+      body {
+          background: white;
+      }
+      
+      .section-worldwide {
+          background: #eef2f7;
+      }
+      
+        section.simplify .manual-review .review-queue .charge .risk-icon{
+            height: initial;    
+        }
+        
+        section.simplify .manual-review .review-queue .charge .detail p{
+            margin-top:-7px;
+        }
+        
+        section.simplify .manual-review .review-queue .charge .button.refund {
+            background-color: white;
+        }
+        
+        section.simplify .manual-review .review-queue .charge .button.accept {
+            background-color: white;
+        }
+        
+        section.simplify .manual-review .review-queue .charge .button:after {
+            background-color: white;
+        
+        }
+        
+        section.simplify .manual-review .copy {
+            display: none;
+        }
+        
+        section.simplify .manual-review .review-queue {
+            flex-basis: inherit;
+            max-width: 1270px;
+        }
+        
+        @media (min-width: 880px){
+                section.simplify .manual-review .review-queue {
+                flex-basis: inherit;    
+            }
+        }
+        
+        @media (min-width: 880px) {
+            section.simplify .manual-review .copy { display: none } }
+        
+        section.simplify .manual-review .review-queue .charge .detail h3 {
+            margin-left: 10px;
+        }
+        
+        section.simplify .manual-review .review-queue .charge .detail p {
+            margin-left: 10px;
+        }
+        
+        section.simplify .manual-review .review-queue .charge .button.click:after {
+            /* animation: inherit; */
+        }
+        
+        section.simplify .manual-review .review-queue .charge .button.accept {
+             background-color: transparent;
+        }
+        
+        section.simplify .manual-review .review-queue .charge .detail h3 {
+            white-space: pre-line;
+        }
+        
+        @media (min-width: 880px) {
+            .angle-clip-container{
+                margin-top: 0px;
+            }
+        }
+        
+        @media (min-width: 670px) {
+            .section-worldwide {
+                padding: 40px 0;
+            }
+        }
+            
+        @media (min-width: 670px) {
+            section.simplify  {
+                padding-top: 0px;
+            }  
+        }
+        
+        section.simplify {
+            padding-top: 12px;
+        }    
+            
+        .business-header .section-header {
+            max-width: inherit;
+        } 
+            
+        @media (min-width: 880px) {
+            .developers-content {    
+                flex-basis: inherit;        
+            }
+        }
