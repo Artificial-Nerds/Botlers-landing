@@ -39,7 +39,7 @@ function getResponse(msg){
     url: "botResponse/"+chatId+"/"+msg,
     type: "GET",
     success: function(data,textStatus,jqXHR ){
-      $( "#input-text" ).focus();
+      //$( "#input-text" ).focus();
       botResponse(data.response);
       $(spinner).remove();
     }
