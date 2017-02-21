@@ -59,7 +59,12 @@ function sendUserMessage(msg){
 function botResponse(msg){
   var chatTimeString = getTimeString();
   var msg_class = ".messageinner-" + msg_number;
-  $(".chat-message-list").append("<li class='message-left " + msg_number + "'><div class='messageinner-" + msg_number + "' hidden><span class='message-text'>" + msg + "</span>" + chatTimeString + "</div></li>");
+  var emoji_class = "";
+  if(msg == "🤔"){
+    emoji_class = "emoji";
+  }
+  var msg_class = ".messageinner-" + msg_number;
+  $(".chat-message-list").append("<li class='message-left " + msg_number + "'><div class='messageinner-" + msg_number + "' hidden><span class='message-text "  + emoji_class +  "'>" + msg + "</span>" + chatTimeString + "</div></li>");
   $(msg_class).delay(600).fadeIn(function(){
     msg_number++;
     onRowAdded();
