@@ -208,6 +208,25 @@
           color: ;
       }
       
+      @media (min-width: 880px) {
+    .worldwide-columns {
+          
+          margin-top:200px;
+      }
+    }
+      @media (min-width: 880px){
+.developers-content {
+      padding: 260px 60px 60px 0;
+          }
+      }
+      
+      @media (min-width: 670px){
+          .section-otherways{
+              padding: 60px 0 100px;
+          }          
+      }
+
+      
     </style>
 
     <link href="https://fonts.googleapis.com/css?family=Sacramento&effect=neon" rel="stylesheet">
@@ -494,7 +513,7 @@
             <div class="controls"></div>
             <!-- <div class='test'></div> -->
             <div class="screen">
-              <img src="phone-screen-e.svg">
+              <img src="phone-screen-f.svg">
             </div>
           </div>
         </figure>
@@ -568,48 +587,14 @@
 
     <% include chat.ejs %>
 
-    <div style="margin-top:100px" class="container-xl worldwide-columns">
-
-      <ul class="xs-rows sm-cols md-rows worldwide-content">
-        <li class="feature-block xs-icon-top md-icon-left">
-          <figure class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48"><path fill="#87BBFD" d="M45 40H14a2 2 0 0 1-2-2V27.2h22.455V26H47v12a2 2 0 0 1-2 2zM34.455 17H45a2 2 0 0 1 2 2v2H34.455v-4z"></path><path fill="#6772E5" d="M34 31H3a2 2 0 0 1-2-2V10a2 2 0 0 1 2-2h31a2 2 0 0 1 2 2v19a2 2 0 0 1-2 2zM11 15a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h5a1 1 0 0 0 1-1v-3z"></path></svg></figure>
-          <h3 class="common-BodyTitle">International cards and&nbsp;currencies</h3>
-          <p class="common-BodyText">Your business can accept all major debit and credit cards from customers in every country in <a class="common-Link" href="https://support.botlers.io/questions/which-currencies-does-stripe-support">100+&nbsp;currencies</a>.</p>
-          <ul class="card-list">
-            <li class="cardBrand-visa">Visa</li>
-            <li class="cardBrand-masterCard">Master Card</li>
-            <li class="cardBrand-americanExpress">American Express</li>
-            <li class="cardBrand-discover">Discover</li>
-            <li class="cardBrand-jcb">JCB</li>
-            <li class="cardBrand-dinersClub">Diners Club</li>
-          </ul>
-        </li>
-
-        <li class="feature-block xs-icon-top md-icon-left">
-          <figure class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48"><path fill="#87BBFD" d="M4.01 17.68L4 14.5c0-2.32 1.727-2.94 3.74-3.566L32.803 3.13c1.762-.546 3.19.784 3.19 2.97v10.93l-31.982.65z"></path><path fill="#6772E5" d="M38 44H10a6 6 0 0 1-6-6V16h.003v-2.117S4.337 15.85 6.56 16H38a6 6 0 0 1 6 6v16a6 6 0 0 1-6 6zm-1.004-17a3 3 0 0 0-3.002 3 3 3 0 0 0 3.002 2.997A3 3 0 0 0 40 30a3 3 0 0 0-3.004-3z"></path></svg></figure>
-          <h3 class="common-BodyTitle">Payment&nbsp;methods</h3>
-          <p class="common-BodyText">Go beyond credit cards and support bank and direct debit payments, local payment wallets, and&nbsp;cryptocurrency.</p>
-
-          <ul class="apm-list">
-              <li class=""><a class="common-Link" href="https://botlers.io/blog/accept-ach-payments">
-                ACH Debits
-              </a></li>
-              <li class=""><a class="common-Link" href="https://botlers.io/alipay">
-                Alipay
-              </a></li>
-              <li class=""><a class="common-Link" href="https://botlers.io/bitcoin">
-                Bitcoin
-              </a></li>
-          </ul>
-        </li>
-      </ul>
+    <div class="container-xl worldwide-columns">
 
       <div class="worldwide-aside">
         <div class="notify-box">
           <button class="notify-close">Close</button>
           <div class="notify-header ">
             <img class="icon" src="./Nerds_Botlers__files/get-notified.svg">
-            <h3 class="common-BodyTitle">Get notified</h3>
+            <h3 class="common-BodyTitle">Entérate cuando estemos listos</h3>
             <p class="common-BodyText">We’re working to add many more payment types. Request the ones you need and we’ll reach out when they’re&nbsp;ready:</p>
           </div>
 
@@ -670,7 +655,7 @@
             </div>
             <div class="notify-input email">
               <input class="email-field" required="required" type="email" name="email" spellcheck="false" placeholder="Email">
-              <button class="submit-button" type="submit">Notify me</button>
+              <button class="submit-button" type="submit">Notifícame</button>
             </div>
             <p class="notify-error methods">Please select one more more payment methods you’d like to get notified about.</p>
             <p class="notify-error email">Please enter your email address.</p>
@@ -790,16 +775,44 @@
 
         <header class="section-header large">
           <h2 class="common-PageSubtitle">
-            <figure class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="72" height="72"><path fill="#43458B" d="M36 0c19.882 0 36 16.117 36 36 0 19.882-16.118 36-36 36S0 55.882 0 36C0 16.117 16.118 0 36 0z"></path><path fill="#87BBFD" d="M55.956 28.5v1l-3.133 1.13c-.04.247-.09.49-.148.732l2.483 2.15-.383.925-3.277-.234c-.146.238-.302.47-.467.697l1.47 2.94-.705.705-2.938-1.47c-.226.164-.46.32-.698.467l.233 3.277-.924.38-2.15-2.482c-.27.065-.547.12-.826.163L43.454 42h-1l-1.036-3.117c-.28-.044-.554-.1-.825-.164l-2.15 2.48-.924-.382.232-3.278c-.24-.146-.472-.303-.697-.467l-2.94 1.47-.706-.706 1.47-2.94a10.85 10.85 0 0 1-.468-.697l-3.276.233-.383-.923 2.482-2.15a9.94 9.94 0 0 1-.163-.825L29.956 29.5v-1l3.117-1.038a9.39 9.39 0 0 1 .142-.733l-2.46-2.244.382-.924 3.325.155c.116-.184.237-.366.364-.543L33.41 20.16l.707-.706 3.014 1.416c.178-.127.36-.248.545-.363l-.155-3.327.922-.382 2.242 2.46s.425-.09.642-.126L42.456 16h1l1.13 3.132c.215.035.43.078.64.127l2.242-2.463.924.383-.155 3.327c.185.115.366.236.544.363l3.015-1.416.708.707-1.417 3.016c.127.177.248.358.364.543l3.325-.156.383.924-2.462 2.242c.05.21.092.424.128.64l3.132 1.13zm-13-1.5a2 2 0 1 0 0 4 2 2 0 0 0 0-4z"></path><path fill="#FFF" d="M42.95 41.416l2.915 1.4-.277 1.576-3.22.32c-.085.264-.18.525-.285.783l2.26 2.312-.8 1.386-3.135-.803c-.17.22-.35.43-.535.638l1.335 2.95-1.226 1.027-2.67-1.826c-.236.145-.477.284-.722.415l.245 3.226-1.503.548-1.885-2.63c-.27.057-.545.106-.822.144L31.755 56h-1.6l-.872-3.116a11.86 11.86 0 0 1-.822-.144l-1.882 2.63-1.504-.548.247-3.226a11.21 11.21 0 0 1-.722-.417l-2.67 1.824-1.226-1.03 1.336-2.947c-.186-.206-.364-.42-.536-.638l-3.135.802-.8-1.386 2.26-2.312a13.056 13.056 0 0 1-.285-.784l-3.217-.318-.28-1.575 2.92-1.4a25.67 25.67 0 0 1 0-.834l-2.92-1.4.28-1.576 3.217-.318c.087-.267.182-.53.286-.786l-2.26-2.313.8-1.384 3.134.802c.172-.22.35-.432.536-.638l-1.335-2.95 1.227-1.027 2.67 1.826c.235-.147.476-.287.723-.418l-.247-3.225 1.504-.547 1.884 2.63a12 12 0 0 1 .823-.145L30.155 26h1.6l.873 3.116c.277.038.55.086.822.143l1.884-2.63 1.503.547-.245 3.225c.245.13.486.27.72.418l2.672-1.825 1.226 1.028-1.335 2.95c.186.205.364.418.535.636l3.136-.804.8 1.386-2.26 2.312c.103.257.2.52.285.784l3.22.317.277 1.576-2.917 1.4c.003.14.003.696-.002.834zM30.953 38a3 3 0 1 0 0 6 3 3 0 0 0 0-6z"></path></svg></figure>
-            Built for developers.
+            <figure class="icon"><svg class="svg-icon" viewBox="0 0 20 20">
+							<path fill="#fff" d="M5.177,17.658c0,0,3.445,1.987,4.823,1.987c2.067,0,4.823-1.987,4.823-1.987c0.024-0.025,0.044-0.054,0.068-0.08H5.109C5.133,17.604,5.153,17.633,5.177,17.658z M8.622,1.583V0.531C6.496,0.973,2.539,2.521,1.376,7.933H0.699c-0.189,0-0.344,0.155-0.344,0.344v1.378C0.354,9.845,0.509,10,0.699,10h0.392c-0.016,0.224-0.026,0.454-0.033,0.689H0.699c-0.189,0-0.344,0.155-0.344,0.344v1.378c0,0.189,0.155,0.344,0.344,0.344h0.439c0.089,0.79,0.262,1.804,0.594,2.849v2.663H4.34c-2.233-2.449-2.264-6.822-2.264-7.01C2.077,4.052,6.353,2.108,8.622,1.583zM10.689,0.354H9.311v2.059h1.378V0.354z M11.378,2.63v0.472H8.622V2.63C6.612,3.147,3.11,4.951,3.11,11.258c0,0,0.004,3.373,1.47,5.632h4.042v-0.689h2.756v0.689h4.042c1.466-2.259,1.47-5.632,1.47-5.632C16.89,4.951,13.388,3.147,11.378,2.63z M5.005,12.035c-0.318-0.364-0.517-0.833-0.517-1.354S4.687,9.69,5.005,9.327V12.035zM6.383,10.026c-0.295,0.078-0.517,0.335-0.517,0.654c0,0.319,0.222,0.576,0.517,0.654v1.395c-0.384-0.032-0.738-0.163-1.033-0.377V9.008c0.296-0.214,0.649-0.345,1.033-0.377V10.026z M7.761,12.353c-0.296,0.214-0.649,0.345-1.033,0.377v-1.395C7.022,11.257,7.244,11,7.244,10.681c0-0.319-0.222-0.576-0.517-0.654V8.631c0.384,0.032,0.738,0.163,1.033,0.377V12.353zM8.105,12.035V9.327c0.318,0.363,0.517,0.833,0.517,1.354S8.423,11.671,8.105,12.035z M10,13.445l-1.378,0.689L10,12.756l1.378,1.378L10,13.445z M11.895,12.035c-0.318-0.364-0.517-0.833-0.517-1.354s0.199-0.991,0.517-1.354V12.035z M13.273,10.026c-0.295,0.078-0.517,0.335-0.517,0.654c0,0.319,0.222,0.576,0.517,0.654v1.395c-0.384-0.032-0.738-0.163-1.033-0.377V9.008c0.296-0.214,0.649-0.345,1.033-0.377V10.026z M14.651,12.353c-0.296,0.214-0.649,0.345-1.033,0.377v-1.395c0.295-0.078,0.517-0.335,0.517-0.654c0-0.319-0.222-0.576-0.517-0.654V8.631c0.384,0.032,0.738,0.163,1.033,0.377V12.353zM14.995,12.035V9.327c0.318,0.363,0.517,0.833,0.517,1.354S15.313,11.671,14.995,12.035z M19.646,9.656V8.278c0-0.189-0.155-0.344-0.344-0.344h-0.678c-1.163-5.413-5.12-6.96-7.246-7.402v1.052c2.269,0.525,6.545,2.469,6.545,9.675c0,0.188-0.031,4.561-2.264,7.01h2.608v-2.663c0.333-1.044,0.505-2.058,0.594-2.849h0.439c0.189,0,0.344-0.155,0.344-0.344v-1.378c0-0.189-0.155-0.344-0.344-0.344h-0.359c-0.007-0.235-0.017-0.465-0.033-0.689h0.392C19.491,10,19.646,9.845,19.646,9.656z"></path>
+						</svg></figure>
+            ¿Cómo funciona la Inteligencia Artificial?
           </h2>
           <p class="common-IntroText">We measure our success in how little payments code you have to write. Quickly integrate our simple, composable APIs that are battle-tested for scale and built for <a class="common-Link" href="https://status.botlers.io/">high availability</a>. Botlers lets you spend your development time on product improvements and ship them&nbsp;faster.</p>
         </header>
 
         <ul class="xs-rows sm-grid md-rows lg-grid developers-features">
-          <li class="feature-block"><p class="common-BodyText"><a class="common-Link" href="https://botlers.io/docs/libraries">Libraries</a> that play nice with your existing stack for desktop, web, iOS, and Android in every language—from Haskell and Node to Python and&nbsp;Go.</p></li>
-          <li class="feature-block"><p class="common-BodyText"><a class="common-Link" href="https://botlers.io/docs">World-class documentation</a>, guides, and recipes that make building any payment experience simple and&nbsp;easy.</p></li>
+          <li class="feature-block"><p class="common-BodyText">
+              
+              <a class="common-Link" href="https://botlers.io/docs/libraries">Libraries</a> that play nice with your existing stack for desktop, web, iOS, and Android in every language—from Haskell and Node to Python and&nbsp;Go.</p>
+            
+                
+          <figure class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48"><path fill="#87BBFD" d="M45 40H14a2 2 0 0 1-2-2V27.2h22.455V26H47v12a2 2 0 0 1-2 2zM34.455 17H45a2 2 0 0 1 2 2v2H34.455v-4z"></path><path fill="#6772E5" d="M34 31H3a2 2 0 0 1-2-2V10a2 2 0 0 1 2-2h31a2 2 0 0 1 2 2v19a2 2 0 0 1-2 2zM11 15a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h5a1 1 0 0 0 1-1v-3z"></path></svg></figure>
+          <h3 class="common-BodyTitle">International cards and&nbsp;currencies</h3>
+          <p class="common-BodyText">Your business can accept all major debit and credit cards from customers in every country in <a class="common-Link" href="https://support.botlers.io/questions/which-currencies-does-stripe-support">100+&nbsp;currencies</a>.</p>
+              
+              
+               <figure class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48"><path fill="#87BBFD" d="M4.01 17.68L4 14.5c0-2.32 1.727-2.94 3.74-3.566L32.803 3.13c1.762-.546 3.19.784 3.19 2.97v10.93l-31.982.65z"></path><path fill="#6772E5" d="M38 44H10a6 6 0 0 1-6-6V16h.003v-2.117S4.337 15.85 6.56 16H38a6 6 0 0 1 6 6v16a6 6 0 0 1-6 6zm-1.004-17a3 3 0 0 0-3.002 3 3 3 0 0 0 3.002 2.997A3 3 0 0 0 40 30a3 3 0 0 0-3.004-3z"></path></svg></figure>
+              
+          <h3 class="common-BodyTitle">International cards and&nbsp;currencies</h3>
+          <p class="common-BodyText">Your business can accept all major debit and credit cards from customers in every country in <a class="common-Link" href="https://support.botlers.io/questions/which-currencies-does-stripe-support">100+&nbsp;currencies</a>.</p>
+          
+            </li>
+          
+            <li style="text-align:-webkit-center" class="feature-block">
+                
+                <img src="robot-azul.png">
+                
+                <p class="common-BodyText">
+                <a class="common-Link" href="https://botlers.io/docs">World-class documentation</a>, guides, and recipes that make building any payment experience simple and&nbsp;easy.</p>
+                
+            </li>
         
+       
+            
+            
         <!--
         <li class="feature-block"><p class="common-BodyText">Versioned, <a class="common-Link" href="https://botlers.io/docs/upgrades">non-breaking API changes</a> let you upgrade on your company’s schedule without&nbsp;surprises.</p></li>
         <li class="feature-block"><p class="common-BodyText">Chat directly with our friendly engineers anytime if you need support. Find us in <a class="common-Link" href="http://freenode.net/">#Botlers on&nbsp;Freenode</a>.</p></li> -->
@@ -833,7 +846,7 @@
 
       <div class="checkout-content feature-block">
         <h3 class="common-BodyTitle">The best payment flow on web and&nbsp;mobile</h3>
-        <p class="common-BodyText">Checkout is an embeddable payment form that our engineers and designers optimize for conversions. With one line of JavaScript, you can drop in a beautiful form that works across browsers and devices, supports new payment types, speaks twelve languages, and automatically improves over&nbsp;time.</p>
+        <p class="common-BodyText">Checkout is an embeddable payment form that our engineers and designers optimize for conversions. With one line of JavaScript, you can drop in a beautiful form that works across browsers and devices.</p>
         <p class="common-BodyText"><a class="common-Link common-Link common-Link--arrow" href="https://botlers.io/checkout">Learn more about Checkout</a></p>
       </div>
 
@@ -873,9 +886,11 @@
       <div class="otherways-graphic">
         <figure class="graphic-platforms loaded">
           <div class="back shadow"></div>
-            <img class="back site" src="./Nerds_Botlers__files/back-site.svg">
+            <img class="back site" src="cupcake_gallery.svg">
+            <!-- <img class="back site" src="./Nerds_Botlers__files/back-site.svg"> -->
+            
           <div class="front shadow"></div>
-            <img class="front site" src="./Nerds_Botlers__files/front-site.svg">
+            <img class="front site" src="cupcake_gallery.svg">
         </figure>
       </div>
 
@@ -884,82 +899,11 @@
 
 </div>
 
-
+<!--
 <div class="section-group group-business">
-
-  <section class="section-business" id="business">
-    <div class="container-lg">
-
-      <div class="business-header">
-        <header class="section-header large">
-          <h2 class="common-PageSubtitle">
-            <figure class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="72" height="72"><path fill="#C4F0FF" d="M36 0c19.882 0 36 16.117 36 36 0 19.882-16.118 36-36 36S0 55.882 0 36C0 16.116 16.118 0 36 0z"></path><path fill="#87BBFD" d="M18.5 54a1.5 1.5 0 0 1-1.5-1.5v-22a1.5 1.5 0 0 1 1.5-1.5H37v25H18.5zM25 33a1 1 0 0 0-1-1h-3a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h3a1 1 0 0 0 1-1v-3zm0 8a1 1 0 0 0-1-1h-3a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h3a1 1 0 0 0 1-1v-3zm7-8a1 1 0 0 0-1-1h-3a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h3a1 1 0 0 0 1-1v-3z"></path><path fill="#6772E5" d="M51.5 54H47v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8h-6V17.5a1.5 1.5 0 0 1 1.5-1.5h15a1.5 1.5 0 0 1 1.5 1.5v35a1.5 1.5 0 0 1-1.5 1.5zM43 29a1 1 0 0 0-1-1h-3a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h3a1 1 0 0 0 1-1v-3zm0 8a1 1 0 0 0-1-1h-3a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h3a1 1 0 0 0 1-1v-3zm7 0a1 1 0 0 0-1-1h-3a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h3a1 1 0 0 0 1-1v-3z"></path><path fill="#87BBFD" d="M49 33h-3a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1h3a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1zm0-8h-3a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1h3a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1zm-7 0h-3a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1h3a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1zm-2 27h8a1 1 0 0 1 1 1v1H39v-1a1 1 0 0 1 1-1z"></path></svg></figure>
-            Run your business on&nbsp;Botlers.
-          </h2>
-          <p class="common-IntroText">Make faster business decisions using insights from real-time data. See all charges—across different payment types, countries, and currencies—in one&nbsp;place.</p>
-        </header>
-      </div>
-
-      <div class="business-columns">
-
-        <div style="display:none" class="business-graphic">
-          <div class="devices-container">
-            <figure class="devices-dashboard loaded">
-              <div class="ground">
-                <div class="shadow"></div>
-              </div>
-              <div class="laptop">
-                <div class="device"></div>
-                <div class="controls"></div>
-                <!-- <div class='test'></div> -->
-                <div class="screen country-US"></div>
-                <div class="shadow"></div>
-              </div>
-              <div class="phone">
-                <div class="device"></div>
-                <div class="controls"></div>
-                <!-- <div class='test'></div> -->
-                <div class="screen country-US"></div>
-              </div>
-              <a class="phone-link" href="https://botlers.io/dashboard/iphone">Dashboard for iPhone</a>
-            </figure>
-          </div>
-          <div class="devices-description">
-            <p>Track and manage your entire business online or <a class="common-Link" href="https://botlers.io/dashboard/iphone">on the go</a> with the Botlers&nbsp;Dashboard.</p>
-          </div>
-        </div>
-
-        <div class="business-features">
-          <ul class="xs-rows">
-
-            <li class="feature-block xs-icon-top">
-              <figure class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48"><path fill="#87BBFD" d="M43.5 20.5a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm-39 15a4 4 0 1 1 0-8 4 4 0 0 1 0 8z"></path><path fill="#6772E5" d="M41 40H7a3 3 0 0 1-3-3v-6.37L17.5 18l13 9L44 14.37V37a3 3 0 0 1-3 3z"></path><path fill="#87BBFD" d="M30.5 28.5l-13-9L4 32.13V11a3 3 0 0 1 3-3h34a3 3 0 0 1 3 3v4.87L30.5 28.5z"></path><path fill="#FFF" d="M43.5 19a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5zM30.495 30a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5zm-12.99-7a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5zM4.5 34a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5z"></path></svg></figure>
-              <h3 class="common-BodyTitle">Dashboard</h3>
-              <p class="common-BodyText">See and manage every payment, customer, subscription, transfer, and more right from your <a class="common-Link" href="https://dashboard.botlers.io/">Dashboard</a>. Quickly get a snapshot of your business and take immediate action. Each user gets an individual account with <a class="common-Link" href="https://dashboard.botlers.io/account/team">fine-grained permissions</a> and <a class="common-Link" href="https://support.botlers.io/questions/how-do-i-enable-two-step-verification">two-factor authentication</a> is&nbsp;available.</p>
-            </li>
-
-            <li class="feature-block xs-icon-top">
-              <figure class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48"><path fill="#87BBFD" d="M37 44H11a3 3 0 0 1-3-3V8a3 3 0 0 1 3-3h26a3 3 0 0 1 3 3v33a3 3 0 0 1-3 3zm-18.5-3h13a1.5 1.5 0 0 0 0-3h-13a1.5 1.5 0 0 0 0 3zM25 21.5a1.5 1.5 0 0 0-1.5-1.5h-6a1.5 1.5 0 0 0 0 3h6a1.5 1.5 0 0 0 1.5-1.5zM12.5 29h9a1.5 1.5 0 0 0 0-3h-9a1.5 1.5 0 0 0 0 3zm11-21h-11a1.5 1.5 0 0 0 0 3h11a1.5 1.5 0 0 0 0-3zm12 6h-13a1.5 1.5 0 0 0 0 3h13a1.5 1.5 0 0 0 0-3zm0 12h-8a1.5 1.5 0 0 0 0 3h8a1.5 1.5 0 0 0 0-3z"></path><path fill="#6772E5" d="M47.66 34.366l-4.154 4.284a1.15 1.15 0 0 1-1.662 0 1.24 1.24 0 0 1 0-1.713L43.722 35H23.5a1.5 1.5 0 0 1 0-3h20.204l-1.86-1.918a1.24 1.24 0 0 1 0-1.713 1.15 1.15 0 0 1 1.662-.003l4.155 4.285c.46.473.46 1.24 0 1.713zM16.5 17H4.296l1.86 1.918a1.24 1.24 0 0 1 0 1.713 1.15 1.15 0 0 1-1.662 0L.34 16.35a1.24 1.24 0 0 1 0-1.714l4.154-4.284a1.15 1.15 0 0 1 1.662 0 1.24 1.24 0 0 1 0 1.713L4.278 14H16.5a1.5 1.5 0 0 1 0 3z"></path></svg></figure>
-              <h3 class="common-BodyTitle">Keep every system in&nbsp;sync</h3>
-              <p class="common-BodyText">Sync your Botlers data with all your existing systems—Netsuite, Quickbooks, and more—and make reconciliation and reporting a breeze for your finance team. If you add <a class="common-Link" href="https://botlers.io/docs/api#products">product data</a>, we’ll even help calculate taxes, shipping costs, and&nbsp;more.</p>
-            </li>
-
-            <li class="feature-block xs-icon-top">
-              <figure class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48"><path fill="#87BBFD" d="M42.402 37.792L25.15 45.77a2.75 2.75 0 0 1-2.3-.002L5.598 37.793a2.748 2.748 0 0 1-1.594-2.495V14.162c0-.565.177-1.1.482-1.548L24 21.63l19.514-9.014c.306.447.482.982.482 1.547v21.135a2.748 2.748 0 0 1-1.594 2.495z"></path><path fill="#6772E5" d="M42.402 37.792L25.15 45.77a2.743 2.743 0 0 1-1.15.252v-24.39l19.514-9.018c.306.448.482.983.482 1.548v21.135a2.748 2.748 0 0 1-1.594 2.495z"></path><path fill="#87BBFD" d="M24 16c-4.97 0-9-2.015-9-4.5v-3h.23c.913 2.003 4.49 3.5 8.77 3.5 4.282 0 7.858-1.497 8.77-3.5H33v3c0 2.485-4.03 4.5-9 4.5z"></path></svg></figure>
-              <h3 class="common-BodyTitle">Extend Botlers and automate any&nbsp;task</h3>
-              <p class="common-BodyText"><a class="common-Link" href="https://botlers.io/docs/integrations">Hundreds of integrations</a> help extend the Botlers platform and automate almost every manual process that used to take hours of human time: reconciliation, reviewing fraud, handling disputes, and&nbsp;more.</p>
-            </li>
-
-          </ul>
-        </div>
-
-      </div>
-
-    </div>
-  </section>
-
 </div>
-
+-->
+    
     </div>
 
     <footer class="globalFooter withCards">
@@ -994,19 +938,19 @@
 
     <div class="content">
       <h1 class="title">
-        <span class="subtitle">Ready to get started?</span>
-        Get in touch, or create an account.
+        <span class="subtitle">¿Estás listo para empezar?</span>
+        Integraremos tu negocio en minutos.
       </h1>
     </div>
 
     <div class="common-ButtonGroup buttons">
 
         <a class="common-Button common-Button--default" href="https://dashboard.botlers.io/register" data-analytics-action="sign_up" data-analytics-source="footer_cta">
-          Create BOTLERS account
+          Crea una cuenta de BOTLERS
         </a>
 
       <a href="https://botlers.io/contact/sales" class="common-Button" data-analytics-action="contact_sales" data-analytics-source="footer_cta">
-        Contact sales
+        Contáctanos
       </a>
 
     </div>
