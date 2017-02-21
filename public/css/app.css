@@ -89,6 +89,12 @@ input:focus, #input-text:focus {
   margin-bottom: 16px;
 }
 
+.emoji{
+  font-size: 48px !important;
+  background: rgba(255,255,255,0) !important;
+  box-shadow: none !important;
+}
+
 .message-right .message-text {
   line-height: 1.5em;
   display: inline-block;
