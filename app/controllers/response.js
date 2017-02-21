@@ -7,27 +7,20 @@ var ddb = require('dynamodb').ddb({ accessKeyId: process.env.AWS_ACCESS_KEY_ID,
                                     secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY });
 
 exports.message = function (req, res) {
-  var params = {
-    TableName: 'conversations_botlers.io'
-  };
-  console.log(process.env.AWS_ACCESS_KEY_ID);
-  var item = {conversation_id: "Hdwqiduhweh", msg: "Hola como estas blah blah"};
+  var item = {conversation_id: req.params.chatId, msg: req.params.message, user: "client"};
+  ddb.putItem('conversations', item, {}, function(err, res, cap) {});
 
-  ddb.listTables({}, function(err, res) {
-    console.log(res);
-  });
-  console.log("------------------- ** ---------------");
-  console.log(req.params);
   request.post({
     url:'http://35.163.243.122:3000/api/v1/sendMessage', json: {
       conversationId: req.params.chatId,
       message: req.params.message
     }
   }, function(err,httpResponse,body){
-    console.log(body);
-    res.send(body.value)
-  });
-};
+    var item = {conversation_id: req.params.chatId, msg: body.value.response, user: "sam"};
+    ddb.putItem('conversations', item, {}, function(err, res, cap) {});
+        res.send(body.value);
+      });
+    };
 
 exports.chatId = function (req, res) {
   //res.send(JSON.stringify({ a: 1 }))
