@@ -10,7 +10,6 @@ function onRowAdded() {
 };
 
 
-
 $(document).ready(function(){
   var data0 = {key: "value"};
   var jsonVal=JSON.stringify(data0);
@@ -21,10 +20,10 @@ $(document).ready(function(){
           $( "#input-text" ).val("");
       }
   });
-  $("#modal").iziModal();
+  $("#modal").iziModal().hide();
   $(document).on('click', '.trigger', function (event) {
       event.preventDefault();
-      $('#modal').iziModal('open');
+      $('#modal').show().iziModal('open');
       console.log("Hola");
   });
 
