@@ -9,9 +9,11 @@ function onRowAdded() {
   });
 };
 
+
+
 $(document).ready(function(){
   var data0 = {key: "value"};
-  var jsonVal=JSON.stringify(data0 );
+  var jsonVal=JSON.stringify(data0);
   $(document).keypress(function(e) {
       if(e.which == 13) {
           var msg = $( "#input-text" ).val();
@@ -19,11 +21,20 @@ $(document).ready(function(){
           $( "#input-text" ).val("");
       }
   });
+  $("#modal").iziModal();
+  $(document).on('click', '.trigger', function (event) {
+      event.preventDefault();
+      $('#modal').iziModal('open');
+      console.log("Hola");
+  });
+
   $.ajax({
     url: "chatId",
     type: "GET",
     success: function(data,textStatus,jqXHR ){
       chatId=data.conversationId;
+      console.log("ENTRO ****");
+
       getResponse("Hola");
     }
   });

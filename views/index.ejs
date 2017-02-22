@@ -21,6 +21,8 @@
     <meta name="twitter:description" content="Un kit de ventas con inteligencia artificial. Desde cupcakes hasta cursos de francés, Botlers ayuda a los negocios a vender automáticamente haciendo uso de la inteligencia artificial.">
     <script async="" src="./Nerds_Botlers__files/analytics.js"></script><script type="application/json" id="strut_files">{&quot;v3/shared/navigation_ie10.css&quot;:&quot;/assets/v3/shared/navigation_ie10-e01e5bea41add6270b67348b4d0e5ea2.css&quot;}</script>
   <link rel="stylesheet" href="./Nerds_Botlers__files/default-b566dce28ebbc5dd249dad9be586554c.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/izimodal/1.4.2/css/iziModal.min.css">
+
   <link rel="stylesheet" href="./Nerds_Botlers__files/index-96cbeb8a572a01fdc7afc2faff292cd6.css">
   <script defer="" src="./Nerds_Botlers__files/default-239cfcaeccf937c2b3e45332484b4a60.js"></script>
   <script defer="" src="./Nerds_Botlers__files/index-7f485ed753d7d8c17d8c206d5aedea78.js"></script>
@@ -263,23 +265,20 @@
           ¿Qué es Botlers?
         </a>
         <!-- <a class="rootLink item-developers colorize" data-dropdown="developers"> -->
-        <a data-analytics-action="developers" data-analytics-source="global_nav" class="rootLink item-pricing colorize" href="https://botlers.io/pricing">  
+        <a data-analytics-action="developers" data-analytics-source="global_nav" class="rootLink item-pricing colorize" href="#como-funciona">
           ¿Cómo funciona?
         </a>
       <!--  <a class="rootLink item-company colorize" data-analytics-action="company" data-analytics-source="global_nav"> -->
-        <a data-analytics-action="company" data-analytics-source="global_nav" class="rootLink item-pricing colorize" href="https://botlers.io/pricing">  
+        <a data-analytics-action="company" data-analytics-source="global_nav" class="rootLink item-pricing colorize" href="#prueba">
           Pruébalo
         </a>
-          <a data-analytics-action="pricing" data-analytics-source="global_nav" class="rootLink item-pricing colorize" href="https://botlers.io/pricing">
-           Caso de éxito 
+          <a data-analytics-action="pricing" data-analytics-source="global_nav" class="rootLink item-pricing colorize" href="#caso-de-exito">
+           Caso de éxito
           </a>
       </li>
 
       <li class="navSection secondary">
-        <a class="rootLink item-support colorize" href="https://support.botlers.io/" data-analytics-action="support" data-analytics-source="global_nav">
-          Inteligencia Artificial
-        </a>
-        <a class="rootLink item-dashboard colorize" data-adroll-segment="submit_two" href="https://dashboard.botlers.io/login" data-analytics-source="global_nav" data-analytics-action="sign_in">
+        <a class="rootLink item-dashboard colorize" data-adroll-segment="submit_two" href="#contacto" data-analytics-source="global_nav" data-analytics-action="sign_in">
             Contacto
         </a>
       </li>
@@ -378,6 +377,8 @@
       </li>
     </ul>
   </div>
+
+
 
   <div class="dropdownRoot">
     <div class="dropdownBackground" style="transform: translateX(171px) scaleX(1.32692) scaleY(1.0975);">
@@ -497,12 +498,25 @@
         </h1>
         <h1 style="" class="common-SuperTitle">Haz&nbsp;lo que más te guste. Botlers lo vende por tí.</h1>
         <p class="common-ButtonGroup">
-          <a href="https://botlers.io/docs" class="common-Button common-Button--dark" data-analytics-action="explore_docs" data-analytics-source="header_cta">
+          <a href="#como-funciona" class="common-Button common-Button--dark" data-analytics-action="explore_docs" data-analytics-source="header_cta">
             ¿Cómo funciona?
           </a>
-          <a href="https://botlers.io/pricing" class="common-Button" data-analytics-action="pricing" data-analytics-source="header_cta">
+          <a href="#" class="common-Button trigger" data-analytics-action="pricing" data-analytics-source="header_cta" s>
             Solicitar demo
           </a>
+          <!-- Trigger to open Modal -->
+          <!-- Modal structure -->
+          <div id="modal">
+            <div class="medium-6 columns small-centered">
+<form id="form" method="post" >
+<input type="text" id="name" name="name" placeholder="Name">
+<input type="email" id="email" name="email" placeholder="Email">
+<input type="submit" class="button small" value="submit">
+<input class="phone" type="text" name="phone" value="invalid">
+<!-- if this field does not submit the value 'valid', the backend script should reject it -->
+</form>
+</div>
+          </div>
         </p>
       </div>
 
@@ -591,7 +605,7 @@
     </div>
   </section>
 
-  <section class="section-worldwide" id="worldwide">
+  <section class="section-worldwide" id="prueba">
     <div class="container-lg">
       <header class="section-header">
         <h2 class="common-UppercaseTitle">Prueba Botlers ¡Platica conmigo!</h2>
@@ -688,7 +702,7 @@
   </section>
 
 <!-------------------- asdasd asdasd asd asd asd ---->
-<section class="section-worldwide" id="worldwide">
+<section class="section-worldwide" id="caso-de-exito">
     <div style="text-align:-webkit-center" class="container-lg">
 
      <h2 style="color:#0075bf" class="common-UppercaseTitle">INTELIGENCIA ARTIFICIAL</h2>
@@ -788,7 +802,7 @@
     <div class="stripe s3"></div>
   </div>
 
-  <section style="background:#004295" class="section-developers" id="developers">
+  <section style="background:#004295" class="section-developers" id="como-funciona">
     <div class="container-xl developers-columns">
 
       <div style="padding-top:80px" class="developers-content">
@@ -805,20 +819,20 @@
 
         <ul class="xs-rows sm-grid md-rows lg-grid developers-features">
           <li class="feature-block"><p class="common-BodyText">
- 
+
                Si por otro lado es tomada como <a class="common-Link" href="https://botlers.io/docs/libraries">ingeniería</a>, basada en una relación deseable de entrada-salida para sintetizar un programa de computador.</p>
-            
-                
+
+
           <figure class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48"><path fill="#87BBFD" d="M45 40H14a2 2 0 0 1-2-2V27.2h22.455V26H47v12a2 2 0 0 1-2 2zM34.455 17H45a2 2 0 0 1 2 2v2H34.455v-4z"></path><path fill="#6772E5" d="M34 31H3a2 2 0 0 1-2-2V10a2 2 0 0 1 2-2h31a2 2 0 0 1 2 2v19a2 2 0 0 1-2 2zM11 15a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h5a1 1 0 0 0 1-1v-3z"></path></svg></figure>
           <h3 class="common-BodyTitle">¿Qué significa?</h3>
           <p class="common-BodyText">"El resultado es un programa de alta eficiencia que funciona como una poderosa herramienta para quien la utiliza."</p>
-              
-              
+
+
                <figure class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48"><path fill="#87BBFD" d="M4.01 17.68L4 14.5c0-2.32 1.727-2.94 3.74-3.566L32.803 3.13c1.762-.546 3.19.784 3.19 2.97v10.93l-31.982.65z"></path><path fill="#6772E5" d="M38 44H10a6 6 0 0 1-6-6V16h.003v-2.117S4.337 15.85 6.56 16H38a6 6 0 0 1 6 6v16a6 6 0 0 1-6 6zm-1.004-17a3 3 0 0 0-3.002 3 3 3 0 0 0 3.002 2.997A3 3 0 0 0 40 30a3 3 0 0 0-3.004-3z"></path></svg></figure>
-              
+
           <h3 class="common-BodyTitle">¿A dónde va?</h3>
           <p class="common-BodyText">Se han desarrollado los sistemas expertos que pueden imitar la capacidad mental del hombre y relacionan reglas de sintaxis del lenguaje hablado y escrito sobre la base de la experiencia, para luego hacer juicios acerca de un problema, cuya solución se logra con mejores juicios y más rápidamente que el ser humano.</p>
-          
+
             </li>
 
             <li style="text-align:-webkit-center" class="feature-block">
@@ -827,7 +841,7 @@
 
                 <p class="common-BodyText">
                 <a class="common-Link" href="https://botlers.io/docs">Botlers</a>, es el primer bot de ventas en español creado y diseñado con una sofisticada tecnología propietaria.</p>
-                
+
 
             </li>
 
@@ -897,7 +911,7 @@
           <li class="feature-block">
             <h3 class="common-BodyTitle">Instala Botlers en tu sitio web</h3>
             <p class="common-BodyText">Si tu ya cuentas con un sitio web, la integración de Botlers para que cuentes con tu primer bot de ventas será súper rápido y fácil.</p>
-            <p class="common-BodyText"><a href="https://botlers.io/docs/integrations" class="common-Link common-Link common-Link--arrow">Mira el primer caso de éxito: www.cupcakegallery.com.mx</a></p>
+            <p class="common-BodyText"><a href="http://www.cupcakegallerymex.com" class="common-Link common-Link common-Link--arrow">Mira el primer caso de éxito: www.cupcakegallerymex.com</a></p>
           </li>
 
         </ul>
@@ -927,9 +941,9 @@
 
     </div>
 
-    <footer class="globalFooter withCards">
+    <footer class="globalFooter withCards" >
 
-  <section class="globalFooterCards">
+  <section class="globalFooterCards" >
     <div class="container-xl">
         <a class="common-Link globalFooterCard card-subscriptions" href="https://botlers.io/subscriptions" data-analytics-action="subscriptions" data-analytics-source="card_link">
 
@@ -954,7 +968,7 @@
     </div>
   </section>
 
-    <article class="globalFooterCTA">
+    <article class="globalFooterCTA" id="contacto">
   <div class="container-lg">
 
     <div class="content">
@@ -1043,6 +1057,8 @@ Botlers</a>
 
 <script type="application/json" id="analytics_config">{&quot;mixpanel&quot;:{&quot;identifier&quot;:&quot;eb71b6171a4f7ed97de9b7a0395b7ca5&quot;},&quot;ga&quot;:{},&quot;trackpage&quot;:true}</script>
 
+
+
 <script src="./Nerds_Botlers__files/analytics.min.js"></script>
 <script src="./Nerds_Botlers__files/analytics-e800ab0ba76de2b697ea3f61c673695b.js"></script>
 <script src="./Nerds_Botlers__files/m.js"></script>
@@ -1051,6 +1067,7 @@ Botlers</a>
   src="https://code.jquery.com/jquery-3.1.1.min.js"
   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
   crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/izimodal/1.4.2/js/iziModal.min.js"></script>
 
   <script src="/js/app.js" charset="utf-8"></script>
 

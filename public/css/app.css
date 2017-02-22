@@ -172,20 +172,3 @@ input:focus, #input-text:focus {
     transform: scale(1.0);
   }
 }
-
-.footerWrap {
-    width:100%;
-    position:fixed;
-    bottom: 0px;
-}
-.footer {
-    width:400px;
-    margin:auto;
-}
-.footerContent {
-    float:left;
-    width:100%;
-    padding: 0px 0;
-}
-.footer p {float:left; width:100%; text-align:center; color: #FFF; font-size: 12px;}
-.footer p a { text-decoration:none; color: #FFF; font-size: 12px;}
