@@ -27,6 +27,17 @@ $(document).ready(function(){
       console.log("Hola");
   });
 
+  $(document).on('click', '#submit-info', function (event) {
+      event.preventDefault();
+      var database = firebase.database();
+      firebase.database().ref('client').push({
+        name: $("#name-info").val(),
+        phone : $("#phone-info").val()
+      });
+      $(".notify-form").hide();
+      $(".common-BodyTitle").text("Gracias " + $("#name-info").val());
+  });
+
   $.ajax({
     url: "chatId",
     type: "GET",

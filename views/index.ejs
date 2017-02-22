@@ -517,9 +517,9 @@
 
                 <form class="notify-form" action="https://botlers.io/payments">
                   <div class="notify-input email">
-                    <input class="email-field" required="required" type="text" name="name" spellcheck="false" placeholder="Nombre">
-                    <input class="email-field" required="required" type="text" name="phone" spellcheck="false" placeholder="Teléfono">
-                    <button class="submit-button" type="submit">Enviar</button>
+                    <input class="email-field"  id="name-info" required="required" type="text" name="name" spellcheck="false" placeholder="Nombre">
+                    <input class="email-field" id="phone-info" required="required" type="text" name="phone" spellcheck="false" placeholder="Teléfono">
+                    <button class="submit-button" id="submit-info" type="submit">Enviar</button>
                   </div>
                 </form>
                 <div class="notify-success">
@@ -1054,6 +1054,19 @@ Botlers</a>
   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
   crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/izimodal/1.4.2/js/iziModal.min.js"></script>
+
+  <script src="https://www.gstatic.com/firebasejs/3.6.10/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyBXz-u73l5lJyUrB6WNvkwA00uWKSvcZkU",
+      authDomain: "cupcakes-8245c.firebaseapp.com",
+      databaseURL: "https://cupcakes-8245c.firebaseio.com",
+      storageBucket: "cupcakes-8245c.appspot.com",
+      messagingSenderId: "80130720371"
+    };
+    firebase.initializeApp(config);
+  </script>
 
   <script src="/js/app.js" charset="utf-8"></script>
 
