@@ -21,16 +21,6 @@ input:focus, #input-text:focus {
     box-shadow: 0 0 2px #0097ff;
 }
 
-@media (max-width: 768px) {
-  #wrapper {
-    width: 90%;
-    margin: 30px auto;
-  }
-  #input-text{
-    width: 100%;
-  }
-}
-
 .logo-container, .container{
   width: 100%;
 }
