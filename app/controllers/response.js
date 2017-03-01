@@ -22,15 +22,14 @@ exports.message = function (req, res) {
       });
     };
 
-exports.chatId = function (req, res) {
-  //res.send(JSON.stringify({ a: 1 }))
-
+exports.chatId = function (req, res) {  
   request.post({
     //url:'http://localhost:1337/api/v1/getConversationId', json: {
     url:'http://35.163.243.122:3000/api/v1/getConversationId', json: {
       key: "value"
     }
   }, function(err,httpResponse,body){
+    console.log(err);
     console.log(body);
     res.send(body)
   });

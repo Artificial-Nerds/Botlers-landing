@@ -21,6 +21,8 @@
     <meta name="twitter:description" content="Un kit de ventas con inteligencia artificial. Desde cupcakes hasta cursos de francés, Botlers ayuda a los negocios a vender automáticamente haciendo uso de la inteligencia artificial.">
     <script async="" src="./Nerds_Botlers__files/analytics.js"></script><script type="application/json" id="strut_files">{&quot;v3/shared/navigation_ie10.css&quot;:&quot;/assets/v3/shared/navigation_ie10-e01e5bea41add6270b67348b4d0e5ea2.css&quot;}</script>
   <link rel="stylesheet" href="./Nerds_Botlers__files/default-b566dce28ebbc5dd249dad9be586554c.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/izimodal/1.4.2/css/iziModal.min.css">
+
   <link rel="stylesheet" href="./Nerds_Botlers__files/index-96cbeb8a572a01fdc7afc2faff292cd6.css">
   <script defer="" src="./Nerds_Botlers__files/default-239cfcaeccf937c2b3e45332484b4a60.js"></script>
   <script defer="" src="./Nerds_Botlers__files/index-7f485ed753d7d8c17d8c206d5aedea78.js"></script>
@@ -263,23 +265,20 @@
           ¿Qué es Botlers?
         </a>
         <!-- <a class="rootLink item-developers colorize" data-dropdown="developers"> -->
-        <a data-analytics-action="developers" data-analytics-source="global_nav" class="rootLink item-pricing colorize" href="https://botlers.io/pricing">  
+        <a data-analytics-action="developers" data-analytics-source="global_nav" class="rootLink item-pricing colorize" href="#como-funciona">
           ¿Cómo funciona?
         </a>
       <!--  <a class="rootLink item-company colorize" data-analytics-action="company" data-analytics-source="global_nav"> -->
-        <a data-analytics-action="company" data-analytics-source="global_nav" class="rootLink item-pricing colorize" href="https://botlers.io/pricing">  
+        <a data-analytics-action="company" data-analytics-source="global_nav" class="rootLink item-pricing colorize" href="#prueba">
           Pruébalo
         </a>
-          <a data-analytics-action="pricing" data-analytics-source="global_nav" class="rootLink item-pricing colorize" href="https://botlers.io/pricing">
-           Caso de éxito 
+          <a data-analytics-action="pricing" data-analytics-source="global_nav" class="rootLink item-pricing colorize" href="#caso-de-exito">
+           Caso de éxito
           </a>
       </li>
 
       <li class="navSection secondary">
-        <a class="rootLink item-support colorize" href="https://support.botlers.io/" data-analytics-action="support" data-analytics-source="global_nav">
-          Inteligencia Artificial
-        </a>
-        <a class="rootLink item-dashboard colorize" data-adroll-segment="submit_two" href="https://dashboard.botlers.io/login" data-analytics-source="global_nav" data-analytics-action="sign_in">
+        <a class="rootLink item-dashboard colorize" data-adroll-segment="submit_two" href="#contacto" data-analytics-source="global_nav" data-analytics-action="sign_in">
             Contacto
         </a>
       </li>
@@ -359,12 +358,12 @@
                   </a>
                 </li>
                 <li>
-                  <a class="item-jobs" href="https://botlers.io/jobs" data-analytics-source="mobile_nav" data-analytics-action="jobs">
+                  <a class="item-jobs" href="https://nerds.ai" data-analytics-source="mobile_nav" data-analytics-action="jobs">
                     Bolsa de Trabajo
                   </a>
                 </li>
                 <li>
-                  <a class="item-blog" href="https://botlers.io/blog" data-analytics-source="mobile_nav" data-analytics-action="blog">
+                  <a class="item-blog" href="https://nerds.ai" data-analytics-source="mobile_nav" data-analytics-action="blog">
                     Blog
                   </a>
                 </li>
@@ -378,6 +377,8 @@
       </li>
     </ul>
   </div>
+
+
 
   <div class="dropdownRoot">
     <div class="dropdownBackground" style="transform: translateX(171px) scaleX(1.32692) scaleY(1.0975);">
@@ -497,12 +498,38 @@
         </h1>
         <h1 style="" class="common-SuperTitle">Haz que Facebook Messenger venda tus productos por tí.</h1>
         <p class="common-ButtonGroup">
-          <a href="https://botlers.io/docs" class="common-Button common-Button--dark" data-analytics-action="explore_docs" data-analytics-source="header_cta">
+          <a href="#como-funciona" class="common-Button common-Button--dark" data-analytics-action="explore_docs" data-analytics-source="header_cta">
             ¿Cómo funciona?
           </a>
-          <a href="https://botlers.io/pricing" class="common-Button" data-analytics-action="pricing" data-analytics-source="header_cta">
+          <a href="#" class="common-Button trigger" data-analytics-action="pricing" data-analytics-source="header_cta" s>
             Solicitar demo
           </a>
+          <!-- Trigger to open Modal -->
+          <!-- Modal structure -->
+          <div id="modal" style="display: none">
+              <div class="notify-box">
+                <button class="notify-close">Close</button>
+                <div class="notify-header ">
+                  <img class="icon" src="./Nerds_Botlers__files/get-notified.svg">
+                  <h3 class="common-BodyTitle">Se el primero en vender con nosotros</h3>
+                  <p class="common-BodyText">Nos pondremos en contacto contigo</p>
+                </div>
+
+                <form class="notify-form" action="https://botlers.io/payments">
+                  <div class="notify-input email">
+                    <input class="email-field"  id="name-info" required="required" type="text" name="name" spellcheck="false" placeholder="Nombre">
+                    <input class="email-field" id="phone-info" required="required" type="text" name="phone" spellcheck="false" placeholder="Teléfono">
+                    <button class="submit-button" id="submit-info" type="submit">Enviar</button>
+                  </div>
+                </form>
+                <div class="notify-success">
+                  <img class="icon" src="./Nerds_Botlers__files/get-notified.svg">
+                  <h3 class="common-BodyTitle">Thank you!</h3>
+                  <p class="common-BodyText">We’ll reach out as soon as more payment types are&nbsp;ready.</p>
+                </div>
+              </div>
+
+          </div>
         </p>
       </div>
 
@@ -591,7 +618,7 @@
     </div>
   </section>
 
-  <section class="section-worldwide" id="worldwide">
+  <section class="section-worldwide" id="prueba">
     <div class="container-lg">
       <header class="section-header">
         <h2 class="common-UppercaseTitle">Prueba Botlers ¡Platica conmigo!</h2>
@@ -688,7 +715,7 @@
   </section>
 
 <!-------------------- asdasd asdasd asd asd asd ---->
-<section class="section-worldwide" id="worldwide">
+<section class="section-worldwide" id="caso-de-exito">
     <div style="text-align:-webkit-center" class="container-lg">
 
      <h2 style="color:#0075bf" class="common-UppercaseTitle">INTELIGENCIA ARTIFICIAL</h2>
@@ -788,7 +815,7 @@
     <div class="stripe s3"></div>
   </div>
 
-  <section style="background:#004295" class="section-developers" id="developers">
+  <section style="background:#004295" class="section-developers" id="como-funciona">
     <div class="container-xl developers-columns">
 
       <div style="padding-top:80px" class="developers-content">
@@ -805,20 +832,20 @@
 
         <ul class="xs-rows sm-grid md-rows lg-grid developers-features">
           <li class="feature-block"><p class="common-BodyText">
- 
+
                Si por otro lado es tomada como <a class="common-Link" href="https://botlers.io/docs/libraries">ingeniería</a>, basada en una relación deseable de entrada-salida para sintetizar un programa de computador.</p>
-            
-                
+
+
           <figure class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48"><path fill="#87BBFD" d="M45 40H14a2 2 0 0 1-2-2V27.2h22.455V26H47v12a2 2 0 0 1-2 2zM34.455 17H45a2 2 0 0 1 2 2v2H34.455v-4z"></path><path fill="#6772E5" d="M34 31H3a2 2 0 0 1-2-2V10a2 2 0 0 1 2-2h31a2 2 0 0 1 2 2v19a2 2 0 0 1-2 2zM11 15a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h5a1 1 0 0 0 1-1v-3z"></path></svg></figure>
           <h3 class="common-BodyTitle">¿Qué significa?</h3>
           <p class="common-BodyText">"El resultado es un programa de alta eficiencia que funciona como una poderosa herramienta para quien la utiliza."</p>
-              
-              
+
+
                <figure class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48"><path fill="#87BBFD" d="M4.01 17.68L4 14.5c0-2.32 1.727-2.94 3.74-3.566L32.803 3.13c1.762-.546 3.19.784 3.19 2.97v10.93l-31.982.65z"></path><path fill="#6772E5" d="M38 44H10a6 6 0 0 1-6-6V16h.003v-2.117S4.337 15.85 6.56 16H38a6 6 0 0 1 6 6v16a6 6 0 0 1-6 6zm-1.004-17a3 3 0 0 0-3.002 3 3 3 0 0 0 3.002 2.997A3 3 0 0 0 40 30a3 3 0 0 0-3.004-3z"></path></svg></figure>
-              
+
           <h3 class="common-BodyTitle">¿A dónde va?</h3>
           <p class="common-BodyText">Se han desarrollado los sistemas expertos que pueden imitar la capacidad mental del hombre y relacionan reglas de sintaxis del lenguaje hablado y escrito sobre la base de la experiencia, para luego hacer juicios acerca de un problema, cuya solución se logra con mejores juicios y más rápidamente que el ser humano.</p>
-          
+
             </li>
 
             <li style="text-align:-webkit-center" class="feature-block">
@@ -827,7 +854,7 @@
 
                 <p class="common-BodyText">
                 <a class="common-Link" href="https://botlers.io/docs">Botlers</a>, es el primer bot de ventas en español creado y diseñado con una sofisticada tecnología propietaria.</p>
-                
+
 
             </li>
 
@@ -897,7 +924,7 @@
           <li class="feature-block">
             <h3 class="common-BodyTitle">Instala Botlers en tu sitio web</h3>
             <p class="common-BodyText">Si tu ya cuentas con un sitio web, la integración de Botlers para que cuentes con tu primer bot de ventas será súper rápido y fácil.</p>
-            <p class="common-BodyText"><a href="https://botlers.io/docs/integrations" class="common-Link common-Link common-Link--arrow">Mira el primer caso de éxito: www.cupcakegallery.com.mx</a></p>
+            <p class="common-BodyText"><a href="http://www.cupcakegallerymex.com" class="common-Link common-Link common-Link--arrow">Mira el primer caso de éxito: www.cupcakegallerymex.com</a></p>
           </li>
 
         </ul>
@@ -927,11 +954,11 @@
 
     </div>
 
-    <footer class="globalFooter withCards">
+    <footer class="globalFooter withCards" >
 
-  <section class="globalFooterCards">
+  <section class="globalFooterCards" >
     <div class="container-xl">
-        <a class="common-Link globalFooterCard card-subscriptions" href="https://botlers.io/subscriptions" data-analytics-action="subscriptions" data-analytics-source="card_link">
+        <a class="common-Link globalFooterCard card-subscriptions" href="http://nerds.ai" data-analytics-action="subscriptions" data-analytics-source="card_link">
 
             <svg class="svg-icon" viewBox="0 0 20 20">
 							<path fill="#76E5A2" d="M5.109,8.392H4.249c-0.238,0-0.43,0.193-0.43,0.431c0,0.238,0.192,0.431,0.43,0.431h0.861c0.238,0,0.43-0.193,0.43-0.431C5.54,8.585,5.347,8.392,5.109,8.392 M4.249,4.088h11.19c0.238,0,0.431-0.192,0.431-0.43c0-0.238-0.192-0.431-0.431-0.431H4.249c-0.238,0-0.43,0.192-0.43,0.431C3.818,3.896,4.011,4.088,4.249,4.088 M2.527,5.81H17.16c0.238,0,0.431-0.192,0.431-0.43c0-0.238-0.192-0.431-0.431-0.431H2.527c-0.238,0-0.43,0.192-0.43,0.431C2.097,5.617,2.289,5.81,2.527,5.81 M18.452,6.67H1.236c-0.476,0-0.861,0.385-0.861,0.861v8.608c0,0.475,0.385,0.86,0.861,0.86h17.216c0.475,0,0.86-0.386,0.86-0.86V7.531C19.312,7.056,18.927,6.67,18.452,6.67 M1.666,7.531c0.238,0,0.431,0.192,0.431,0.431c0,0.238-0.192,0.43-0.431,0.43c-0.238,0-0.43-0.192-0.43-0.43C1.236,7.724,1.428,7.531,1.666,7.531 M1.666,16.14c-0.238,0-0.43-0.192-0.43-0.431c0-0.237,0.192-0.431,0.43-0.431c0.238,0,0.431,0.193,0.431,0.431C2.097,15.947,1.904,16.14,1.666,16.14 M18.021,16.14c-0.238,0-0.431-0.192-0.431-0.431c0-0.237,0.192-0.431,0.431-0.431s0.431,0.193,0.431,0.431C18.452,15.947,18.26,16.14,18.021,16.14 M18.452,14.496c-0.136-0.048-0.279-0.078-0.431-0.078c-0.714,0-1.291,0.578-1.291,1.291c0,0.151,0.03,0.295,0.078,0.431H2.878c0.048-0.136,0.079-0.279,0.079-0.431c0-0.713-0.579-1.291-1.292-1.291c-0.151,0-0.295,0.03-0.43,0.078V9.174c0.135,0.048,0.279,0.079,0.43,0.079c0.713,0,1.292-0.578,1.292-1.291c0-0.152-0.031-0.295-0.079-0.431h13.93C16.761,7.667,16.73,7.81,16.73,7.962c0,0.713,0.577,1.291,1.291,1.291c0.151,0,0.295-0.031,0.431-0.079V14.496z M18.021,8.392c-0.238,0-0.431-0.192-0.431-0.43c0-0.238,0.192-0.431,0.431-0.431s0.431,0.192,0.431,0.431C18.452,8.2,18.26,8.392,18.021,8.392 M15.438,14.418h-0.86c-0.238,0-0.431,0.192-0.431,0.43c0,0.238,0.192,0.431,0.431,0.431h0.86c0.238,0,0.431-0.192,0.431-0.431C15.869,14.61,15.677,14.418,15.438,14.418 M9.844,8.392c-1.901,0-3.443,1.542-3.443,3.443s1.542,3.443,3.443,3.443s3.443-1.542,3.443-3.443S11.745,8.392,9.844,8.392 M11.233,13.271c-0.071,0.162-0.169,0.297-0.292,0.403c-0.124,0.108-0.268,0.189-0.434,0.246c-0.166,0.058-0.295,0.089-0.488,0.097v0.4H9.673v-0.4c-0.208-0.004-0.35-0.037-0.522-0.099c-0.174-0.063-0.322-0.151-0.445-0.267s-0.219-0.257-0.286-0.424c-0.067-0.168-0.099-0.361-0.095-0.579h0.659c-0.003,0.256,0.052,0.459,0.168,0.608c0.115,0.147,0.257,0.226,0.522,0.233v-1.417c-0.158-0.042-0.265-0.094-0.422-0.154c-0.156-0.061-0.297-0.139-0.422-0.234c-0.125-0.095-0.226-0.215-0.303-0.36c-0.077-0.144-0.115-0.323-0.115-0.538c0-0.187,0.035-0.352,0.106-0.494c0.072-0.143,0.168-0.261,0.289-0.357c0.121-0.096,0.261-0.168,0.419-0.22C9.383,9.665,9.5,9.64,9.673,9.64V9.256h0.348V9.64c0.173,0,0.287,0.023,0.441,0.07c0.154,0.047,0.288,0.117,0.401,0.211c0.114,0.093,0.204,0.212,0.272,0.356c0.067,0.145,0.101,0.312,0.101,0.503h-0.659c-0.008-0.199-0.059-0.351-0.153-0.457c-0.095-0.105-0.197-0.158-0.404-0.158V11.4c0.173,0.048,0.293,0.103,0.459,0.165c0.166,0.062,0.312,0.142,0.439,0.239c0.127,0.098,0.229,0.219,0.306,0.363c0.077,0.144,0.116,0.321,0.116,0.532C11.341,12.919,11.305,13.109,11.233,13.271M10.458,12.332c-0.067-0.051-0.143-0.092-0.228-0.123c-0.085-0.031-0.123-0.06-0.21-0.082v1.363c0.208-0.016,0.329-0.076,0.462-0.185c0.133-0.107,0.199-0.277,0.199-0.512c0-0.109-0.02-0.2-0.061-0.275C10.581,12.444,10.526,12.383,10.458,12.332 M9.069,10.74c0,0.094,0.019,0.174,0.058,0.241c0.039,0.066,0.087,0.122,0.148,0.169c0.06,0.047,0.128,0.085,0.208,0.114s0.109,0.054,0.19,0.073v-1.171c-0.208,0-0.32,0.044-0.434,0.132C9.126,10.386,9.069,10.533,9.069,10.74"></path>
@@ -942,7 +969,7 @@
   <p class="common-BodyText">Visita nuestro blog de comercio conversacional para que conozcas más información de como vender más y mejor por internet.</p>
 </a>
 
-  <a class="common-Link globalFooterCard card-connect" href="https://botlers.io/connect" data-analytics-action="connect" data-analytics-source="card_link">
+  <a class="common-Link globalFooterCard card-connect" href="http://nerds.ai" data-analytics-action="connect" data-analytics-source="card_link">
       <svg class="svg-icon" viewBox="0 0 20 20">
 							<path fill="#69D5F8" d="M10.862,6.47H3.968v6.032h6.894V6.47z M10,11.641H4.83V7.332H10V11.641z M12.585,11.641h-0.861v0.861h0.861V11.641z M7.415,14.226h0.862v-0.862H7.415V14.226z M8.707,17.673h2.586c0.237,0,0.431-0.193,0.431-0.432c0-0.237-0.193-0.431-0.431-0.431H8.707c-0.237,0-0.431,0.193-0.431,0.431C8.276,17.479,8.47,17.673,8.707,17.673 M5.691,14.226h0.861v-0.862H5.691V14.226z M4.83,13.363H3.968v0.862H4.83V13.363z M16.895,4.746h-3.017V3.023h1.292c0.476,0,0.862-0.386,0.862-0.862V1.299c0-0.476-0.387-0.862-0.862-0.862H10c-0.476,0-0.862,0.386-0.862,0.862v0.862c0,0.476,0.386,0.862,0.862,0.862h1.293v1.723H3.106c-0.476,0-0.862,0.386-0.862,0.862v12.926c0,0.476,0.386,0.862,0.862,0.862h13.789c0.475,0,0.861-0.387,0.861-0.862V5.608C17.756,5.132,17.369,4.746,16.895,4.746 M10.862,2.161H10V1.299h0.862V2.161zM11.724,1.299h3.446v0.862h-3.446V1.299z M13.016,4.746h-0.861V3.023h0.861V4.746z M16.895,18.534H3.106v-2.585h13.789V18.534zM16.895,15.088H3.106v-9.48h13.789V15.088z M15.17,12.502h0.862v-0.861H15.17V12.502z M13.447,12.502h0.861v-0.861h-0.861V12.502zM15.17,10.778h0.862V9.917H15.17V10.778z M15.17,9.055h0.862V8.193H15.17V9.055z M16.032,6.47h-4.309v0.862h4.309V6.47zM14.309,8.193h-0.861v0.862h0.861V8.193z M12.585,8.193h-0.861v0.862h0.861V8.193z M13.447,14.226h2.585v-0.862h-2.585V14.226zM13.447,10.778h0.861V9.917h-0.861V10.778z M12.585,9.917h-0.861v0.861h0.861V9.917z"></path>
 						</svg>
@@ -954,7 +981,7 @@
     </div>
   </section>
 
-    <article class="globalFooterCTA">
+    <article class="globalFooterCTA" id="contacto">
   <div class="container-lg">
 
     <div class="content">
@@ -966,11 +993,11 @@
 
     <div class="common-ButtonGroup buttons">
 
-        <a class="common-Button common-Button--default" href="https://dashboard.botlers.io/register" data-analytics-action="sign_up" data-analytics-source="footer_cta">
+        <!-- <a class="common-Button common-Button--default" href="https://dashboard.botlers.io/register" data-analytics-action="sign_up" data-analytics-source="footer_cta">
           Crea una cuenta de BOTLERS
-        </a>
+        </a> -->
 
-      <a href="https://botlers.io/contact/sales" class="common-Button" data-analytics-action="contact_sales" data-analytics-source="footer_cta">
+      <a href="mailto:hola@nerds.ai" class="common-Button" data-analytics-action="contact_sales" data-analytics-source="footer_cta">
         Contáctanos
       </a>
 
@@ -1000,36 +1027,9 @@ Botlers</a>
 
     <div class="siteNav">
       <div class="column">
-        <h4>Botlers</h4>
-        <div class="splitColumn">
-          <ul>
-            <li><a href="https://botlers.io/payments"><strong>Formas de pago</strong></a></li>
-            <li><a href="https://botlers.io/subscriptions"><strong>¿Cómo empezar?</strong></a></li>
-            <li><a href="https://botlers.io/connect"><strong>FAQ</strong></a></li>
-          </ul>
-          <ul>
-            <li><a href="https://botlers.io/pricing">Comisiones</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="column">
-        <h4>Acerca de</h4>
-        <ul>
-          <li><a href="https://botlers.io/docs">La empresa</a></li>
-          <li><a href="https://botlers.io/docs/api">La tecnología</a></li>
-        </ul>
-      </div>
-      <div class="column">
-        <h4>Artificial Nerds</h4>
-        <ul>
-          <li><a href="https://botlers.io/about">Acerca de</a></li>
-          <li><a href="https://botlers.io/customers">Inteligencia Artificial</a></li>
-        </ul>
-      </div>
-      <div class="column">
         <h4>Contacto</h4>
         <ul>
-          <li><a href="https://support.botlers.io/">Email</a></li>
+          <li><a href="mailto:hola@nerds.ai">Email</a></li>
         </ul>
       </div>
     </div>
@@ -1043,6 +1043,8 @@ Botlers</a>
 
 <script type="application/json" id="analytics_config">{&quot;mixpanel&quot;:{&quot;identifier&quot;:&quot;eb71b6171a4f7ed97de9b7a0395b7ca5&quot;},&quot;ga&quot;:{},&quot;trackpage&quot;:true}</script>
 
+
+
 <script src="./Nerds_Botlers__files/analytics.min.js"></script>
 <script src="./Nerds_Botlers__files/analytics-e800ab0ba76de2b697ea3f61c673695b.js"></script>
 <script src="./Nerds_Botlers__files/m.js"></script>
@@ -1051,6 +1053,20 @@ Botlers</a>
   src="https://code.jquery.com/jquery-3.1.1.min.js"
   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
   crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/izimodal/1.4.2/js/iziModal.min.js"></script>
+
+  <script src="https://www.gstatic.com/firebasejs/3.6.10/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyBXz-u73l5lJyUrB6WNvkwA00uWKSvcZkU",
+      authDomain: "cupcakes-8245c.firebaseapp.com",
+      databaseURL: "https://cupcakes-8245c.firebaseio.com",
+      storageBucket: "cupcakes-8245c.appspot.com",
+      messagingSenderId: "80130720371"
+    };
+    firebase.initializeApp(config);
+  </script>
 
   <script src="/js/app.js" charset="utf-8"></script>
 
