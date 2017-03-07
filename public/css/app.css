@@ -3,6 +3,11 @@
   margin: 30px auto;
 }
 
+#logo_header{
+  height: 30px;
+  margin-bottom: 10px;
+}
+
 #input-text{
   height: 30px;
   width: 100%;
