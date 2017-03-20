@@ -35,7 +35,7 @@ $(document).ready(function(){
         phone : $("#phone-info").val()
       });
       $(".notify-form").hide();
-      $(".common-BodyTitle").text("Gracias " + $("#name-info").val());
+      $("#name-result").text("Gracias " + $("#name-info").val());
   });
 
   $.ajax({
